@@ -1,0 +1,7 @@
+// Listing Notifications Strings
+"titleNavBar" = "Notificações";
+"descriptionEmptyState" = "Você ainda não recebeu nenhuma mensagem";
+"titleError" = "Ops... Algo deu errado.";
+"descriptionError" = "Houve um erro ao tentar carregar suas notifições.";
+
+// Date String
