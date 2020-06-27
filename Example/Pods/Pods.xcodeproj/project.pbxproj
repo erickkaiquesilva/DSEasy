@@ -12,11 +12,10 @@
 		52879551FDC0CD44E7DD66C007DDA28F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8580A229456C7EB4D24B7F5755A499C3 /* Pods-DSEasy_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A570C8BA48FEEEDCA3B1FE839EAB0A2B /* Pods-DSEasy_Tests-dummy.m */; };
 		AE53D00721122ABFED1FB6F58559E5B4 /* Pods-DSEasy_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5653F7E13870D52A61782AEDA11C5B /* Pods-DSEasy_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5352C75426AA25C1BCC9D27CB8FA2C8 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEC9F99ADFFAABD6C2337435286014E /* ReplaceMe.swift */; };
 		E278959DC35413E78E6A2A5F4A6C7F56 /* Pods-DSEasy_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2F03720D2E26A6DC9177FAA32E8F05 /* Pods-DSEasy_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5D3A1611C299F591F0BBFE8067A2346 /* DSEasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA593E83D9D63E431C1020B35D508C6 /* DSEasy-dummy.m */; };
 		EBADCE31746AC93079451F841E8D000A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F4C0589C24A6E97500738590 /* DSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0589B24A6E97500738590 /* DSButton.swift */; };
+		F4C058A124A6F14100738590 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C058A024A6F14100738590 /* DefaultButton.swift */; };
 		F85B824B73A9EDFDF1D26E341F6C4769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,10 +67,9 @@
 		BEC1C9728B412AA52F913C75C0B04C71 /* Pods-DSEasy_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DSEasy_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C37341DE3E4320C26EDFF24A84B52016 /* DSEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2DE9533F2376FDBAB0645D64210343 /* Pods-DSEasy_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DSEasy_Example-Info.plist"; sourceTree = "<group>"; };
-		EDEC9F99ADFFAABD6C2337435286014E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = DSEasy/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		EFA4B1B75686ED66038F22F19B4852A6 /* DSEasy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DSEasy-Info.plist"; sourceTree = "<group>"; };
 		F38396B73EBBC54518C9B2BF9116875A /* DSEasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSEasy-prefix.pch"; sourceTree = "<group>"; };
-		F4C0589B24A6E97500738590 /* DSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSButton.swift; sourceTree = "<group>"; };
+		F4C058A024A6F14100738590 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,8 +215,7 @@
 		EE856CA22AB252D81867ED853E10ED5D /* DSEasy */ = {
 			isa = PBXGroup;
 			children = (
-				F4C0589A24A6E92E00738590 /* Buttons */,
-				EDEC9F99ADFFAABD6C2337435286014E /* ReplaceMe.swift */,
+				F4C0589F24A6F10800738590 /* Buttons */,
 				A8149F40F981514B6A5C26AFA577AD99 /* Pod */,
 				E9F682D9BD5FDB38112EF636649BBBDA /* Support Files */,
 			);
@@ -226,12 +223,13 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		F4C0589A24A6E92E00738590 /* Buttons */ = {
+		F4C0589F24A6F10800738590 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				F4C0589B24A6E97500738590 /* DSButton.swift */,
+				F4C058A024A6F14100738590 /* DefaultButton.swift */,
 			);
-			path = Buttons;
+			name = Buttons;
+			path = DSEasy/Classes/Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +326,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					E142280F61364B02BF17642DA20D7AA7 = {
+						LastSwiftMigration = 1110;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -395,8 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5D3A1611C299F591F0BBFE8067A2346 /* DSEasy-dummy.m in Sources */,
-				F4C0589C24A6E97500738590 /* DSButton.swift in Sources */,
-				C5352C75426AA25C1BCC9D27CB8FA2C8 /* ReplaceMe.swift in Sources */,
+				F4C058A124A6F14100738590 /* DefaultButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E75E73D7D86E5B4C7D3DB76C07201F9 /* DSEasy.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -442,6 +445,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -520,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81227E2902E47BCE1EEEEA3410F02A38 /* DSEasy.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
