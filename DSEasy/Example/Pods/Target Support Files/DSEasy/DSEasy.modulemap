@@ -1,0 +1,6 @@
+framework module DSEasy {
+  umbrella header "DSEasy-umbrella.h"
+
+  export *
+  module * { export * }
+}

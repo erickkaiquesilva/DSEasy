@@ -1,0 +1,16 @@
+PODS:
+  - DSEasy (0.1.0)
+
+DEPENDENCIES:
+  - DSEasy (from `../`)
+
+EXTERNAL SOURCES:
+  DSEasy:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DSEasy: a4e95d2e24ed204058cf5689adf87c8bdd346602
+
+PODFILE CHECKSUM: 3ad85f0091c27359334cb2d52a41fbe511f67451
+
+COCOAPODS: 1.9.1

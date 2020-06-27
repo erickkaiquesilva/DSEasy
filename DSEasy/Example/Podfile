@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DSEasy_Example' do
+  pod 'DSEasy', :path => '../'
+
+  target 'DSEasy_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
