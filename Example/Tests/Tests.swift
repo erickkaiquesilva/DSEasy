@@ -1,5 +1,5 @@
 import XCTest
-import DSEasy
+@testable import DSEasy
 
 class Tests: XCTestCase {
     

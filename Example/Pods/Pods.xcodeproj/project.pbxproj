@@ -15,6 +15,8 @@
 		E278959DC35413E78E6A2A5F4A6C7F56 /* Pods-DSEasy_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2F03720D2E26A6DC9177FAA32E8F05 /* Pods-DSEasy_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5D3A1611C299F591F0BBFE8067A2346 /* DSEasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA593E83D9D63E431C1020B35D508C6 /* DSEasy-dummy.m */; };
 		EBADCE31746AC93079451F841E8D000A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F415C8F124A8139800C17663 /* DSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415C8F024A8139800C17663 /* DSColors.swift */; };
+		F415C8F424A815ED00C17663 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415C8F324A815ED00C17663 /* ColorPalette.swift */; };
 		F4C058A124A6F14100738590 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C058A024A6F14100738590 /* DefaultButton.swift */; };
 		F4C058A424A6F64700738590 /* DSEasyAutoLayoutDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C058A324A6F64700738590 /* DSEasyAutoLayoutDSL.swift */; };
 		F4C058A924A6FA4300738590 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C058A824A6FA4300738590 /* Colors.xcassets */; };
@@ -73,6 +75,8 @@
 		EA2DE9533F2376FDBAB0645D64210343 /* Pods-DSEasy_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DSEasy_Example-Info.plist"; sourceTree = "<group>"; };
 		EFA4B1B75686ED66038F22F19B4852A6 /* DSEasy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DSEasy-Info.plist"; sourceTree = "<group>"; };
 		F38396B73EBBC54518C9B2BF9116875A /* DSEasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSEasy-prefix.pch"; sourceTree = "<group>"; };
+		F415C8F024A8139800C17663 /* DSColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSColors.swift; sourceTree = "<group>"; };
+		F415C8F324A815ED00C17663 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		F4C058A024A6F14100738590 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F4C058A324A6F64700738590 /* DSEasyAutoLayoutDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEasyAutoLayoutDSL.swift; sourceTree = "<group>"; };
 		F4C058A824A6FA4300738590 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 		EE856CA22AB252D81867ED853E10ED5D /* DSEasy */ = {
 			isa = PBXGroup;
 			children = (
+				F415C8F224A815D500C17663 /* Color Palette */,
+				F415C8EF24A8137B00C17663 /* Colors */,
 				F4C058A524A6FA2C00738590 /* Resource */,
 				F4C058A224A6F63300738590 /* Helpers */,
 				F4C0589F24A6F10800738590 /* Buttons */,
@@ -231,6 +237,22 @@
 			);
 			name = DSEasy;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		F415C8EF24A8137B00C17663 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F415C8F024A8139800C17663 /* DSColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F415C8F224A815D500C17663 /* Color Palette */ = {
+			isa = PBXGroup;
+			children = (
+				F415C8F324A815ED00C17663 /* ColorPalette.swift */,
+			);
+			path = "Color Palette";
 			sourceTree = "<group>";
 		};
 		F4C0589F24A6F10800738590 /* Buttons */ = {
@@ -447,8 +469,10 @@
 			files = (
 				E5D3A1611C299F591F0BBFE8067A2346 /* DSEasy-dummy.m in Sources */,
 				F4C058A124A6F14100738590 /* DefaultButton.swift in Sources */,
+				F415C8F124A8139800C17663 /* DSColors.swift in Sources */,
 				F4C058A424A6F64700738590 /* DSEasyAutoLayoutDSL.swift in Sources */,
 				F4C058AD24A700CD00738590 /* DSAssets.swift in Sources */,
+				F415C8F424A815ED00C17663 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +511,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DSEasy/DSEasy-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DSEasy/DSEasy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DSEasy/DSEasy.modulemap";
 				PRODUCT_MODULE_NAME = DSEasy;
@@ -587,7 +611,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DSEasy/DSEasy-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DSEasy/DSEasy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DSEasy/DSEasy.modulemap";
 				PRODUCT_MODULE_NAME = DSEasy;
