@@ -8,15 +8,23 @@
 import UIKit
 
 public enum DSButtonType {
-    case primary
-    case secundary
-    case primaryDark
-    case secundaryDark
+    case confirm
+    case warning
+    case cancel
+    case alternative
 }
 
 public enum DSButtonStyle {
     case small
     case medium
+    
+    @available(iOS 11.0, *)
+    var font: UIFont {
+        switch self {
+        case .small: return DSFonts.montserrat(type: .medium, size: 12)
+        case .medium: return DSFonts.montserrat(type: .medium, size: 14)
+        }
+    }
     
     var heigth: Float {
         switch self {
@@ -26,7 +34,8 @@ public enum DSButtonStyle {
     }
 }
 
-class DefaultButton: UIButton {
+@available(iOS 11.0, *)
+public class DefaultButton: UIButton {
     
     private let style: DSButtonStyle
     
@@ -54,15 +63,51 @@ class DefaultButton: UIButton {
     }
     
     private func setup() {
+        clearPreviousSetup()
         layer.cornerRadius = CGFloat(style.heigth / 2.0)
+        setupTitle()
+        setupBackground()
+        addConstraints()
     }
     
-    private func setupTitle() { }
+    private func clearPreviousSetup() {
+        backgroundColor = .clear
+        layer.borderColor = UIColor.clear.cgColor
+        layer.borderWidth = 0
+    }
     
-    private func setupBackground() { }
+    private func setupTitle() {
+        switch type {
+        case .confirm, .warning, .cancel, .alternative:
+            setTitleColor(UIColor.white, for: .normal)
+        }
+        titleLabel?.font = style.font
+    }
+    
+    private func setupBackground() {
+        switch type {
+        case .confirm:
+            backgroundColor = DSColors.greenLight
+            layer.borderColor = DSColors.greenDark.cgColor
+        case .warning:
+            backgroundColor = DSColors.yellowLight
+            layer.borderColor = DSColors.yellowDark.cgColor
+        case .cancel:
+            backgroundColor = DSColors.redDefault
+            layer.borderColor = DSColors.redDark.cgColor
+        case .alternative:
+            backgroundColor = DSColors.blueDefault
+            layer.borderColor = DSColors.blueDark.cgColor
+        }
+        layer.borderWidth = 2
+    }
     
     private func setupDisableBackground() { }
     
-    private func addConstraints() { }
+    private func addConstraints() {
+        layout.applyConstraint {
+            $0.height(style.heigth)
+        }
+    }
     
 }
