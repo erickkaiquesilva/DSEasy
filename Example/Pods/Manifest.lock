@@ -1,5 +1,5 @@
 PODS:
-  - DSEasy (0.1.0)
+  - DSEasy (1.0.0)
 
 DEPENDENCIES:
   - DSEasy (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DSEasy: a4e95d2e24ed204058cf5689adf87c8bdd346602
+  DSEasy: 2aa7e436577ab0d18f9a60e6ea728b0da59dee88
 
 PODFILE CHECKSUM: 3ad85f0091c27359334cb2d52a41fbe511f67451
 

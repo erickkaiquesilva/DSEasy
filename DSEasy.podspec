@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'DSEasy/Classes/**/*'
-  s.resource = 'DSEasy/Assests/*'
+  s.resource = ['DSEasy/Assests/*', 'DSEasy/MontserratFont/*.{ttf}']
 
   s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
