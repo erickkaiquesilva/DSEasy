@@ -5,64 +5,68 @@
 //  Created by Erick Kaique Da Silva on 27/06/20.
 //
 
-public struct DSColors {
-    func colorOrDefault(_ name: String, alpha: CGFloat = 1.0) -> UIColor {
+public class DSColors {
+    static func colorOrDefault(_ name: String, alpha: CGFloat = 1.0) -> UIColor {
         return DSAssets.colorFromName(name, alpha: alpha) ?? UIColor.black
     }
     
-    public var blueDark: UIColor {
+    public static var blueDark: UIColor {
         return colorOrDefault("blueDark")
     }
     
-    public var blueDefault: UIColor {
+    public static var blueDefault: UIColor {
         return colorOrDefault("blueDefault")
     }
     
-    public var blueLight: UIColor {
+    public static var blueLight: UIColor {
         return colorOrDefault("blueLight")
     }
     
-    public var greenDark: UIColor {
+    public static var greenDark: UIColor {
         return colorOrDefault("greenDark")
     }
     
-    public var greenDefault: UIColor {
+    public static var greenDefault: UIColor {
         return colorOrDefault("greenDefault")
     }
     
-    public var greenLight: UIColor {
+    public static var greenLight: UIColor {
         return colorOrDefault("greenLight")
     }
     
-    public var yellowDark: UIColor {
+    public static var yellowDark: UIColor {
         return colorOrDefault("yellowDark")
     }
     
-    public var yellowDefault: UIColor {
+    public static var yellowDefault: UIColor {
         return colorOrDefault("yellowDefault")
     }
     
-    public var yellowLight: UIColor {
+    public static var yellowLight: UIColor {
         return colorOrDefault("yellowLight")
     }
     
-    public var redDark: UIColor {
+    public static var redDark: UIColor {
         return colorOrDefault("redDark")
     }
     
-    public var redDefault: UIColor {
+    public static var redDefault: UIColor {
         return colorOrDefault("redDefault")
     }
     
-    public var redLight: UIColor {
+    public static var redLight: UIColor {
         return colorOrDefault("redLight")
     }
     
-    public var dark: UIColor {
+    public static var dark: UIColor {
         return colorOrDefault("dark")
     }
     
-    public var grayLight: UIColor  {
+    public static var grayLight: UIColor {
         return colorOrDefault("grayDark")
+    }
+    
+    public static var whiteLight: UIColor {
+        return colorOrDefault("whiteLight")
     }
 }

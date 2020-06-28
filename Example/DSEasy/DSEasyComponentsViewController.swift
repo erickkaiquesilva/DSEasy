@@ -6,14 +6,14 @@
 //  Copyright (c) 2020 erickkaiquesilva. All rights reserved.
 //
 
-import UIKit
+import DSEasy
 
 class DSEasyComponentsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = .white
+        view.backgroundColor = DSColors.blueDark
     }
 
     override func didReceiveMemoryWarning() {
