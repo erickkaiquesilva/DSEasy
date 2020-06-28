@@ -17,10 +17,11 @@
 		EBADCE31746AC93079451F841E8D000A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F415C8F124A8139800C17663 /* DSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415C8F024A8139800C17663 /* DSColors.swift */; };
 		F415C8F424A815ED00C17663 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415C8F324A815ED00C17663 /* ColorPalette.swift */; };
+		F415C8FC24A81B1200C17663 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F415C8F824A81B1200C17663 /* Colors.xcassets */; };
+		F415C8FE24A81B1200C17663 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F415C8FA24A81B1200C17663 /* Localizable.strings */; };
+		F415C8FF24A81B1200C17663 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F415C8FB24A81B1200C17663 /* Images.xcassets */; };
 		F4C058A124A6F14100738590 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C058A024A6F14100738590 /* DefaultButton.swift */; };
 		F4C058A424A6F64700738590 /* DSEasyAutoLayoutDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C058A324A6F64700738590 /* DSEasyAutoLayoutDSL.swift */; };
-		F4C058A924A6FA4300738590 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C058A824A6FA4300738590 /* Colors.xcassets */; };
-		F4C058AB24A6FA5200738590 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C058AA24A6FA5200738590 /* Images.xcassets */; };
 		F4C058AD24A700CD00738590 /* DSAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C058AC24A700CD00738590 /* DSAssets.swift */; };
 		F85B824B73A9EDFDF1D26E341F6C4769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -77,10 +78,11 @@
 		F38396B73EBBC54518C9B2BF9116875A /* DSEasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSEasy-prefix.pch"; sourceTree = "<group>"; };
 		F415C8F024A8139800C17663 /* DSColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSColors.swift; sourceTree = "<group>"; };
 		F415C8F324A815ED00C17663 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		F415C8F824A81B1200C17663 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F415C8FA24A81B1200C17663 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F415C8FB24A81B1200C17663 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4C058A024A6F14100738590 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F4C058A324A6F64700738590 /* DSEasyAutoLayoutDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEasyAutoLayoutDSL.swift; sourceTree = "<group>"; };
-		F4C058A824A6FA4300738590 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		F4C058AA24A6FA5200738590 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4C058AC24A700CD00738590 /* DSAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAssets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,9 +229,9 @@
 		EE856CA22AB252D81867ED853E10ED5D /* DSEasy */ = {
 			isa = PBXGroup;
 			children = (
+				F415C8F624A81A9400C17663 /* Resource */,
 				F415C8F224A815D500C17663 /* Color Palette */,
 				F415C8EF24A8137B00C17663 /* Colors */,
-				F4C058A524A6FA2C00738590 /* Resource */,
 				F4C058A224A6F63300738590 /* Helpers */,
 				F4C0589F24A6F10800738590 /* Buttons */,
 				A8149F40F981514B6A5C26AFA577AD99 /* Pod */,
@@ -255,6 +257,25 @@
 			path = "Color Palette";
 			sourceTree = "<group>";
 		};
+		F415C8F624A81A9400C17663 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F415C8F724A81B1200C17663 /* Assets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		F415C8F724A81B1200C17663 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F415C8F824A81B1200C17663 /* Colors.xcassets */,
+				F415C8FA24A81B1200C17663 /* Localizable.strings */,
+				F415C8FB24A81B1200C17663 /* Images.xcassets */,
+			);
+			name = Assets;
+			path = DSEasy/Assets;
+			sourceTree = "<group>";
+		};
 		F4C0589F24A6F10800738590 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,32 +293,6 @@
 			);
 			name = Helpers;
 			path = DSEasy/Classes/Helpers;
-			sourceTree = "<group>";
-		};
-		F4C058A524A6FA2C00738590 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F4C058A624A6FA2C00738590 /* Font */,
-				F4C058A724A6FA2C00738590 /* Assets */,
-			);
-			name = Resource;
-			path = DSEasy/Classes/Resource;
-			sourceTree = "<group>";
-		};
-		F4C058A624A6FA2C00738590 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
-		F4C058A724A6FA2C00738590 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				F4C058A824A6FA4300738590 /* Colors.xcassets */,
-				F4C058AA24A6FA5200738590 /* Images.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,8 +427,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C058A924A6FA4300738590 /* Colors.xcassets in Resources */,
-				F4C058AB24A6FA5200738590 /* Images.xcassets in Resources */,
+				F415C8FC24A81B1200C17663 /* Colors.xcassets in Resources */,
+				F415C8FF24A81B1200C17663 /* Images.xcassets in Resources */,
+				F415C8FE24A81B1200C17663 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
