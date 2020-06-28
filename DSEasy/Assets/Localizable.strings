@@ -1,7 +1,16 @@
-// Listing Notifications Strings
-"titleNavBar" = "Notificações";
-"descriptionEmptyState" = "Você ainda não recebeu nenhuma mensagem";
-"titleError" = "Ops... Algo deu errado.";
-"descriptionError" = "Houve um erro ao tentar carregar suas notifições.";
+// Buttons
+"confirm" = "Confirma";
+"warning" = "Alerta";
+"cancel" = "Cancelar";
+"done" = "Done Alternative"
 
-// Date String
+// Text Size
+"titleLarge" = "Titúlo Grande";
+"titleMedium" = "Titúlo Médio";
+"subTitleMedium" = "Sub Titúlo";
+"subTitleSmall" = "Sub Titúlo";
+
+// Error
+"tryAgain" =  "Tente Novamente";
+"titleTryAgain" = "OPS!!! Ocorreu um erro";
+"descriptionTryAgain" = "Desculpe ocorreu um erro inesperado tente novamente mais tarde";
