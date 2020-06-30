@@ -3,6 +3,7 @@
 # Check that the module does not contain new warnings
 
 Pod::Spec.new do |s|
+  s.swift_version    = '5.0'
   s.name             = 'DSEasy'
   s.version          = '1.0.0'
   s.summary          = 'A short description of DSEasy.'
@@ -15,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'erickkaiquesilva' => 'erickkay272@gmail.com' }
   s.source           = { :git => 'https://github.com/erickkaiquesilva/DSEasy.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   s.source_files = 'DSEasy/Classes/**/*'
   s.resource = ['DSEasy/Assests/*', 'DSEasy/MontserratFont/*.{ttf}']
 

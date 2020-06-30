@@ -10,7 +10,7 @@ import DSEasy
 
 class DSEasyComponentsViewController: UIViewController {
     
-    let confirmButton = DefaultButton(title: "Confirme".uppercased(), type: .confirm, style: .medium)
+    let confirmButton = ButtonOutline(title: "Confirme".uppercased(), type: .confirm, style: .medium)
     let warningButton = DefaultButton(title: "Alerta".uppercased(), type: .warning, style: .medium)
     let cancelButton = DefaultButton(title: "Cancelar".uppercased(), type: .cancel, style: .medium)
     let alternative = DefaultButton(title: "Botão Alternativo".uppercased(), type: .alternative, style: .medium)
